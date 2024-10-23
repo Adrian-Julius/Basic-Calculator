@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator Program</title>
+
+    <!-- Icon link-->
+    <link
+      rel="shortcut icon"
+      href="./assets/calculatorLogo.jpg"
+      type="image/x-icon"
+    />
+
+    <!-- CSS link-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>BASIC CALCULATOR</h2>
+    </header>
+
+    <div class="calculatorContainer">
+      <input
+        type="text"
+        id="inputValue"
+        placeholder="0"
+        readonly
+        required
+      /><br />
+
+      <button class="operators" onclick="calculator(`/`)">÷</button>
+      <button class="keys" onclick="calculator(`7`)">7</button>
+      <button class="keys" onclick="calculator(`8`)">8</button>
+      <button class="keys" onclick="calculator(`9`)">9</button>
+      <button class="operators" onclick="calculator(`*`)">X</button>
+      <button class="keys" onclick="calculator(`4`)">4</button>
+      <button class="keys" onclick="calculator(`5`)">5</button>
+      <button class="keys" onclick="calculator(`6`)">6</button>
+      <button class="operators" onclick="calculator(`-`)">-</button>
+      <button class="keys" onclick="calculator(`1`)">1</button>
+      <button class="keys" onclick="calculator(`2`)">2</button>
+      <button class="keys" onclick="calculator(`3`)">3</button>
+      <button class="operators" onclick="calculator(`+`)">+</button>
+      <button class="keys" onclick="calculator(`0`)">0</button>
+
+      <button id="resetButton" class="symbols" onclick="reset()">C</button>
+      <button id="resultButton" class="symbols" onclick="result()">=</button>
+    </div>
+
+    <footer>
+      <h3>© 2024 Adrian Julius Villaruel. All rights reserved.</h3>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
